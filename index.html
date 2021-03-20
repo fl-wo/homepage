@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wong Wing Ue's Homepage</title>
+  <link rel="stylesheet" media="screen" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Crete+Round&family=Fjalla+One&family=Lobster&display=swap" rel="stylesheet">
+
+
+</head>
+<script>
+          function myFunction() {
+              alert("The message was sent.");
+          }
+
+          
+</script>
+
+<body>
+	<h5>Wong Wing Ue's Homepage</h5>
+
+	<div class="ProfilePicture">
+		<img src="profilePicture.png" id="profile picture" alt="Profile Picture">
+	</div>
+
+	<div class="text">
+          
+	   <div class="Introduction">
+
+		<h3>Introduction</h3>
+		<p>Hi! I am Wong Wing Ue, a Financial Technology student from Hong Kong Polytechnic University. I am interested in a lot of things. Things I have never been learned, things unknown to me. Completing these applications gives me much sense of accomplishment. Therefore, in the future, I will work harder to learn more programming techniques, hoping to have an excellent performance in software engineering.</p>
+        <h3></h3>
+	   </div>
+	   <br>
+        <div class="ProgrammingLanguage">
+    	     <h3>Programming Skills</h3>
+            <p>Here are some programming languages I've learned.</p>
+            <table style="width:100%">
+            	<tr>
+                    <th>Language</th>
+                    <th>Relative familiarity</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>30%</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="Others">
+        	<h3>Other Things about me</h3>
+        	<p>I like to listen to music in my free time. There is no specific type of this music, including pop music and country music, etc. Here are some songs I like.</p>
+        	<iframe width="800" height="450" src="https://www.youtube.com/embed/CR4YE7htLgI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        	<iframe width="800" height="450" src="https://www.youtube.com/embed/aatr_2MstrI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        	<p>Sometimes, I paint and make some decorations by myself. Here is some picture.</p>
+        	<div class="diy">
+        	      <img src="diy1.jpeg" id="diy1" alt="diy1">
+        	      <img src="diy2.jpeg" id="diy2" alt="diy2">
+        	</div>
+        	<p>I also like to enjoy delicious food with my friends.</p>
+
+            <div class="Food">
+                <img class="DFoods" src="food1.jpeg">
+                <img class="DFoods" src="food2.jpeg">
+                <img class="DFoods" src="food3.jpeg">
+                <img class="DFoods" src="food4.jpeg">
+                <img class="DFoods" src="food5.jpeg">
+            </div>
+
+        	<h2>_</h2>
+        </div>
+        <script>
+               var ind = 0;
+               showFoods();
+
+               function showFoods() {
+                 var i;
+                 var foods = document.getElementsByClassName("DFoods");
+                 for (i = 0; i < foods.length; i++) {
+                      foods[i].style.display = "none";  
+                 }
+
+                 ind++;
+                 if (ind > foods.length) {ind = 1}    
+                 foods[ind-1].style.display = "block";  
+                 setTimeout(showFoods, 2000); 
+                 }
+        </script>
+
+
+       
+        <div class="message">
+        <div class="Square1">
+        	</div>
+        <div class="Square2">
+        	</div>
+        	<h3>Leave a Message</h3>
+        	<form onsubmit="myFunction()">
+        	<textarea id="message" placeholder="Leave a message you want me to know." rows="4" cols="50"></textarea>
+            <br>
+            <input type="submit" value="Send">
+            </form>
+        </div>
+          
+         
+    </div>
+    
+</body>
+</html>

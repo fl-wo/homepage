@@ -1,0 +1,130 @@
+body{
+     font-size: 30px;
+     font-family: 'Crete Round', serif;
+     
+}
+h2{
+	visibility: hidden;
+}
+h3{
+	color:#e69900;
+	font-family: 'Lobster', cursive;
+	font-size: 48px;
+}
+h5{
+	color:#e69900;
+	font-family: 'Lobster', cursive;
+	font-size: 55px;
+
+}
+
+.ProfilePicture img{
+	float: right;
+	width: 300px;
+    
+}
+.Introduction{
+	background: #ffdd99; 
+	padding: 15px 175px 15px 110px;  
+}
+.ProgrammingLanguage{
+  border: 15px solid transparent;
+  padding: 20px;
+  border-image: url(border.png) 35% round;
+}
+table{
+	border: 10px solid black;
+}
+td{
+	text-align: center;
+}
+.Others{
+	background: #ffdd99; 
+	padding: 15px 175px 15px 110px;  
+}
+
+.diy img {
+	width: 49%;
+	outline-style: solid;
+    outline-width: 10px;
+    outline-color: white;
+
+}
+.diy img:hover{
+	transform:scale(1.2,1.2);
+}
+.message{
+	padding: 15px 175px 15px 110px;  
+}
+textarea{
+	width: 800px;
+    font-size: 30px;
+}
+[type=submit]{
+    width: 200px;
+    font-size: 30px;
+}
+.Square1{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: #ffaa00; 
+  animation-name: square1;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;  
+}
+@keyframes square1 {
+  0%   {background-color: #ffaa00; left:0px; top:0px;}
+  50%  {background-color: #ffaa00;  left:100%; top:0px;}
+  100% {background-color: #ffaa00;  left:0px; top:0px;}
+}
+.Square2{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background-color: #ffaa00; 
+  animation-name: square2;
+  animation-duration: 15s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;  
+}
+@keyframes square2 {
+  0%   {background-color: #ffaa00; left:0px; top:0px;}
+  50%  {background-color: #ffaa00;  left:100%; top:0px;}
+  100% {background-color: #ffaa00;  left:0px; top:0px;}
+}
+.DFoods {display:none;}
+
+.Food img{
+	width:45%;
+	outline-style: solid;
+    outline-width: 10px;
+    outline-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+@media only screen and (max-width: 1000px) {
+   .Food img{
+	width:60%;
+	outline-style: solid;
+    outline-width: 10px;
+    outline-color: black;
+    margin-left: auto;
+    margin-right: auto;
+
+   }
+   .ProfilePicture img{
+	float: right;
+	width: 30%;
+    
+   }
+   .diy img {
+	width: 100%;
+	outline-style: solid;
+    outline-width: 10px;
+    outline-color: white;
+
+    }
+
+}
